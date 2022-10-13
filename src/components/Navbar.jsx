@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="md:block 2xl:items-center 2xl:flex mx-5 2xl:justify-between ">
+      <div className="md:block 2xl:items-center mt-[30px] 2xl:flex mx-5 2xl:justify-between ">
         <div className="md:flex md:justify-between md:items-center md:w-[100%]">
           <img
             className="md:w-[112px] md:h-[30px] 2xl:w-[161px] 2xl:h-[43px]"
