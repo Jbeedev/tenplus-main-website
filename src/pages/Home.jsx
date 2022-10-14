@@ -7,10 +7,7 @@ import laptopFlowers from "../data/laptopFlowers.jpg";
 import blogImage1 from "../data/blogImage1.jpg";
 import blogImage2 from "../data/blogImage2.jpg";
 import blogImage3 from "../data/blogImage3.jpg";
-import clientImage from "../data/clientImage.jpg";
 import footerImage from "../data/footerImage.png";
-// import Hamburger from "hamburger-react";
-import MobileNav from "../components/MobileNav";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { FaRegCheckSquare } from "react-icons/fa";
 import { BiRightArrowAlt } from "react-icons/bi";
@@ -24,13 +21,16 @@ import { MdOutlineLocationSearching } from "react-icons/md";
 import { BiLowVision } from "react-icons/bi";
 import { AiTwotoneHome } from "react-icons/ai";
 
-// import { HiEnvelope } from "react-icons/hi";
 import { BsTelephoneFill } from "react-icons/bs";
 import { SiAsana } from "react-icons/si";
 import { SiTiktok } from "react-icons/si";
+import { IoLogoTwitter } from "react-icons/io";
+import { IoLogoInstagram } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { ImLinkedin } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
 import { SiSlack } from "react-icons/si";
-import SimpleSlider from "../components/carousel";
 
 const Home = () => {
   return (
@@ -461,92 +461,94 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="p-10  bg-[#01303F] w-[100vw] md:block flex gap-[113px]">
-        <div className="bg-white rounded-[10px] pr-[58px] md:pr-[33px] pl-[57px] md:pl-[33px]">
-          <h1 className="text-[32px] pt-8 pb-[37px]">
-            Have a project in mind?
-          </h1>
-          <div className="mb-[39px]">
-            <input
-              className="mb-[30px] w-[100%] md:w-[100%] h-[56px] rounded-[5px] pl-7"
-              style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
-              type="text"
-              placeholder="Your Name"
-            />
-            <input
-              className="mb-[30px] w-[100%] md:w-[100%] h-[56px] rounded-[5px] pl-7"
-              style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
-              type="text"
-              placeholder="Your Email"
-            />
-            <select className="mb-[30px] w-[100%] md:w-[100%] bg-white h-[56px] rounded-[5px] pl-7"
-              style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }} name="pets" id="pet-select">
-              <option value="">Select Services</option>
-              <option value="dog">Web Development</option>
-              <option value="cat">Mobile App Development</option>
-              <option value="hamster">Graphics Design</option>
-              <option value="parrot">Artificial Intelligence</option>
-              <option value="spider">Digital Marketing </option>
-              <option value="goldfish">Project Management</option>
-              <option value="goldfish">Printing Services</option>
-              <option value="goldfish">Video Editing</option>
-              <option value="goldfish"> Cybersecurity</option>
-              <option value="goldfish">Blockchain</option>
-              <option value="goldfish">Computers and Accessories</option>
-              <option value="goldfish">IT Training</option>
-            </select>
-            {/* <input
-              className="mb-[30px] w-[100%] md:w-[100%] h-[56px] rounded-[5px] placeholder:pl-7"
-              style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
-              type="text"
-              placeholder="Select Services"
-            /> */}
-            <textarea
-              className="w-[100%] md:w-[100%] rounded-[5px]"
-              rows="4"
-              cols="50"
-              style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
-              type="text"
-            />
+      <div className="w-[100vw] pt-[164px] pb-[116px] bg-[#01303F]">
+        <div className="ml-[50px] md:mx-[21px] md:block flex gap-[113px]">
+          <div className="bg-white rounded-[10px] pr-[58px] md:pr-[33px] pl-[57px] md:pl-[33px]">
+            <h1 className="text-[32px] pt-8 pb-[37px]">
+              Have a project in mind?
+            </h1>
+            <div className="mb-[39px]">
+              <input
+                className="mb-[30px] w-[100%] md:w-[100%] h-[56px] rounded-[5px] pl-7"
+                style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                className="mb-[30px] w-[100%] md:w-[100%] h-[56px] rounded-[5px] pl-7"
+                style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
+                type="text"
+                placeholder="Your Email"
+              />
+              <select
+                className="mb-[30px] w-[100%] md:w-[100%] bg-white h-[56px] rounded-[5px] pl-7"
+                style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
+                name="pets"
+                id="pet-select"
+              >
+                <option value="">Select Services</option>
+                <option value="web">Web Development</option>
+                <option value="mobileApp">Mobile App Development</option>
+                <option value="graphics">Graphics Design</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="digMkt">Digital Marketing </option>
+                <option value="projjectMgt">Project Management</option>
+                <option value="printingService">Printing Services</option>
+                <option value="videoEditing">Video Editing</option>
+                <option value="cuberSecurity"> Cybersecurity</option>
+                <option value="blockChain">Blockchain</option>
+                <option value="computerAcessories">
+                  Computers and Accessories
+                </option>
+                <option value="itTraining">IT Training</option>
+              </select>
+              <textarea
+                className="w-[100%] md:w-[100%] rounded-[5px]"
+                rows="4"
+                cols="50"
+                style={{ border: "1px solid rgba(0, 0, 0, 0.3)" }}
+                type="text"
+              />
+            </div>
+            <div className="mb-[35px] md:pb-[46px]">
+              <Button text="Submit" bgColor="#29ABE2" color="#ffffff" />
+            </div>
           </div>
-          <div className="mb-[35px] md:pb-[46px]">
-            <Button text="Submit" bgColor="#29ABE2" color="#ffffff" />
-          </div>
-        </div>
-        <div className="w-[55%] md:w-[100%] mt-10 pr-2">
-          <h3 className="text-[#29ABE2] text-base mb-[11px]">
-            OUR HAPPY CLIENTS
-          </h3>
-          <h1 className="text-[32px] md:text-[20px] text-white mb-[50px]">
-            What Clients Say About Us
-          </h1>
-          <Test />
-          <h1 className="font-normal mt-[82px] md:text-[10px] md:tracking-widest text-base text-[#29ABE2]">
-            OUR TRUSTED CLIENTS
-          </h1>
-          <div className="flex gap-7 items-center mt-[25px]">
-            <p className="flex items-center gap-1 text-white font-medium text-xl">
-              <span className="text-[#F06A6A]">
-                <SiAsana />
-              </span>{" "}
-              asana
-            </p>
-            <p className="flex items-center gap-1 text-black font-medium text-xl">
-              <span className="text-white">
-                <SiTiktok />
-              </span>
-              Tiktok
-            </p>
-            <p className="text-xl">
-              <span className="text-white">
-                <SiGmail />
-              </span>
-            </p>
-            <p className="text-xl">
-              <span className="text-[#fc5151]">
-                <SiSlack />
-              </span>
-            </p>
+          <div className="w-[55%] md:w-[100%] mt-10 pr-2">
+            <h3 className="text-[#29ABE2] text-base mb-[11px]">
+              OUR HAPPY CLIENTS
+            </h3>
+            <h1 className="text-[32px] md:text-[20px] text-white mb-[50px]">
+              What Clients Say About Us
+            </h1>
+            <Test />
+            <h1 className="font-normal mt-[82px] md:text-[10px] md:tracking-widest text-base text-[#29ABE2]">
+              OUR TRUSTED CLIENTS
+            </h1>
+            <div className="flex gap-7 items-center mt-[25px]">
+              <p className="flex items-center gap-1 text-white font-medium text-xl">
+                <span className="text-[#F06A6A]">
+                  <SiAsana />
+                </span>{" "}
+                asana
+              </p>
+              <p className="flex items-center gap-1 text-black font-medium text-xl">
+                <span className="text-white">
+                  <SiTiktok />
+                </span>
+                Tiktok
+              </p>
+              <p className="text-xl">
+                <span className="text-white">
+                  <SiGmail />
+                </span>
+              </p>
+              <p className="text-xl">
+                <span className="text-[#fc5151]">
+                  <SiSlack />
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -560,258 +562,6 @@ const Home = () => {
           </a>
         </p>
       </div>
-      {/* --------------------- footer ------------------------ */}
-      {/* <div className="bg-[#01303F] pt-[71px]">
-        <div className="mx-10">
-          <div className=" md:mx-5 md:pb-[60px] flex md:block gap-12">
-            <div>
-              <img
-                className="w-[204px] md:w-[154px]"
-                src={footerImage}
-                alt="footer logo"
-              />
-              <p className="my-[32px] text-white font-light text-base  ">
-                It is a long established fact that a reader will be distracted
-                by the readable content.
-              </p>
-              <div className="mb-[177px] md:hidde">
-                <input
-                  className="bg-[#01303F] h-[55px] w-[365px] border-solid border border-[gray] p-0 placeholder:pl-7"
-                  placeholder="Subscribe"
-                  type="text"
-                />
-                <button className="bg-[#29ABE2] h-[56px] w-[65px] text-[#29ABE2] p-0 border-none">
-                  .
-                </button>
-              </div>
-            </div>
-            <div className="text-white">
-              <h1 className="mb-[30px] text-[20px] font-normal">SERVICES</h1>
-              <ul
-                className="text-base font-light"
-                style={{ color: "rgba(255, 255, 255, 0.8)" }}
-              >
-                <li>Web Development</li>
-                <li>Mobile App Development</li>
-                <li>Graphics Design</li>
-                <li>Digital Marketing</li>
-                <li>Artificial Intelligence</li>
-                <li>Project Management</li>
-                <li>Printing Services</li>
-                <li>Video Editing</li>
-                <li>Cybersecurity</li>
-                <li>Blockchain</li>
-                <li>Computers and Accessories</li>
-                <li>IT Training</li>
-              </ul>
-            </div>
-            <div className="text-white md:mt-12">
-              <h1 className="mb-[30px] text-[20px] font-normal">
-                USEFUL LINKS
-              </h1>
-              <ul
-                className="text-base font-light"
-                style={{ color: "rgba(255, 255, 255, 0.8)" }}
-              >
-                Portfolio
-                <li>Portal</li>
-                <li>Blog</li>
-                <li>Terms And Conditions</li>
-                <li>Privacy Policy</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            <div className="text-white md:mt-12">
-              <h1 className="mb-[30px] text-[20px] font-normal">CONTACT</h1>
-              <ul
-                className="text-base font-light"
-                style={{ color: "rgba(255, 255, 255, 0.8)" }}
-              >
-                <li className="flex items-center mb-[36px] ">
-                  <span className="text-2xl mr-4">
-                    <AiTwotoneHome />
-                  </span>
-                  No. 29, University Road, Tanke, Ilorin, Kwara State.
-                </li>
-                <li className="flex items-center mb-[39px]">
-                  <span className="text-2xl mr-4">
-                    <AiTwotoneHome />
-                  </span>{" "}
-                  4th floor, Church-Gate Tower C, Constitution Avenue, Abuja
-                </li>
-                <li className="flex items-center mb-[43px]">
-                  <span className="text-2xl mr-4">
-                    <BsTelephoneFill />
-                  </span>
-                  info@tenpluslabs.com
-                </li>
-                <li className="flex items-center mb-[43px]">
-                  <span className="text-2xl mr-4">
-                    <BsTelephoneFill />
-                  </span>
-                  08139251969
-                </li>
-                <li className="flex items-center ">
-                  <span className="text-2xl mr-4">
-                    <BsTelephoneFill />
-                  </span>
-                  07051146553
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="mx-10 pb-6">
-          <div className="flex items-center text-white mb-[26.5px] md:hidden">
-            <div className="mr-[23px]">Follow us:</div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div>
-              <SiTiktok />
-            </div>
-          </div>
-          <p className="text-white text-basee font-light mb-[64px] md:hidden">
-            © Copyright 2022 TenPlus Digital Labs
-          </p>
-        </div>
-      </div> */}
-
-      {/* <div className="bg-[#01303F] pt-[71px]">
-        <div className="md:mx-5 mx-10">
-          <div className=" md:mx-5 md:pb-[60px] flex-wrap flex md:block gap-12">
-            <div>
-              <img
-                className="w-[204px] md:w-[154px]"
-                src={footerImage}
-                alt="footer logo"
-              />
-              <p className="my-[32px] text-white font-light text-base  ">
-                It is a long established fact that a reader will be distracted
-                by the readable content.
-              </p>
-              <div className="mb-[177px] md:hidde border w-[100%] border-[gray] flex justify-between">
-                <input
-                  className="bg-[#01303F] h-[55px] w-[100%]  border-solid border-0 border-[gray] p-0 placeholder:pl-7"
-                  placeholder="Subscribe"
-                  type="text"
-                />
-                <button className="bg-[#29ABE2] h-[56px] w-[65px] text-[#29ABE2] p-0 border-none">
-                  .
-                </button>
-              </div>
-            </div>
-            <div className="text-white">
-              <h1 className="mb-[30px] text-[20px] font-normal">SERVICES</h1>
-              <ul
-                className="text-base font-light"
-                style={{ color: "rgba(255, 255, 255, 0.8)" }}
-              >
-                <li>Web Development</li>
-                <li>Mobile App Development</li>
-                <li>Graphics Design</li>
-                <li>Digital Marketing</li>
-                <li>Artificial Intelligence</li>
-                <li>Project Management</li>
-                <li>Printing Services</li>
-                <li>Video Editing</li>
-                <li>Cybersecurity</li>
-                <li>Blockchain</li>
-                <li>Computers and Accessories</li>
-                <li>IT Training</li>
-              </ul>
-            </div>
-            <div className="text-white md:mt-12">
-              <h1 className="mb-[30px] text-[20px] font-normal">
-                USEFUL LINKS
-              </h1>
-              <ul
-                className="text-base font-light"
-                style={{ color: "rgba(255, 255, 255, 0.8)" }}
-              >
-                Portfolio
-                <li>Portal</li>
-                <li>Blog</li>
-                <li>Terms And Conditions</li>
-                <li>Privacy Policy</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            <div className="text-white md:mt-12">
-              <h1 className="mb-[30px] text-[20px] font-normal">CONTACT</h1>
-              <ul
-                className="text-base font-light"
-                style={{ color: "rgba(255, 255, 255, 0.8)" }}
-              >
-                <li className="flex items-center mb-[36px] ">
-                  <span className="text-2xl mr-4">
-                    <AiTwotoneHome />
-                  </span>
-                  No. 29, University Road, Tanke, , Iplorin, Kwara State.
-                </li>
-                <li className="flex items-center mb-[39px]">
-                  <span className="text-2xl mr-4">
-                    <AiTwotoneHome />
-                  </span>{" "}
-                  4th floor, Church-Gate Tower C, Constitution Avenue, Abuja
-                </li>
-                <li className="flex items-center mb-[43px]">
-                  <span className="text-2xl mr-4">
-                    <BsTelephoneFill />
-                  </span>
-                  info@tenpluslabs.com
-                </li>
-                <li className="flex items-center mb-[43px]">
-                  <span className="text-2xl mr-4">
-                    <BsTelephoneFill />
-                  </span>
-                  08139251969
-                </li>
-                <li className="flex items-center ">
-                  <span className="text-2xl mr-4">
-                    <BsTelephoneFill />
-                  </span>
-                  07051146553
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="mx-10 pb-6">
-          <div className="flex items-center text-white mb-[26.5px]">
-            <div className="mr-[23px]">Follow us:</div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div className="mr-3">
-              <SiTiktok />
-            </div>
-            <div>
-              <SiTiktok />
-            </div>
-          </div>
-          <p className="text-white text-basee font-light mb-[64px]">
-            © Copyright 2022 TenPlus Digital Labs
-          </p>
-        </div>
-      </div> */}
 
       <div className="bg-[#01303F] pt-[71px]">
         <div className="mx-10 md:mx-5 grid gap-[47px] md:grid-cols-1 grid-cols-5 ">
@@ -913,20 +663,23 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="mx-10 pb-6">
+        <div className="md:mt-[114px] mx-10 pb-6">
           <div className="flex items-center text-white mb-[26.5px]">
             <div className="mr-[23px]">Follow us:</div>
             <div className="mr-3">
-              <SiTiktok />
+              <FaFacebook />
             </div>
             <div className="mr-3">
-              <SiTiktok />
+              <IoLogoTwitter />
             </div>
             <div className="mr-3">
-              <SiTiktok />
+              <IoLogoInstagram />
             </div>
             <div className="mr-3">
-              <SiTiktok />
+              <FaTelegram />
+            </div>
+            <div className="mr-3">
+              <ImLinkedin />
             </div>
             <div>
               <SiTiktok />

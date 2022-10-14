@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import blogImage1 from "../data/blogImage1.jpg";
 import blogImage2 from "../data/blogImage2.jpg";
+import clientImage from "../data/clientImage.jpg";
 
 export default class Fade extends Component {
   render() {
@@ -22,7 +23,7 @@ export default class Fade extends Component {
             <div className="flex gap-10 items-center mb-[24px]">
               <img
                 className="rounded-full object-cover h-[75px] w-[75px]"
-                src={blogImage1}
+                src={clientImage}
                 alt=""
               />
               <span className="text-2xl md:text-[12px] text-black">
