@@ -4,6 +4,9 @@ import TenPlusLogo from "../data/TenPlus logo.png";
 import Button from "./Button";
 import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,18 +31,18 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`md:bg-[#29ABE2] md:rounded md:py-5 md:text-white md:mr-0 2xl:mr-[373px] ${
+          className={`md:bg-white md:rounded md:py-5 md:border border-black md:text-black md:mr-0 2xl:mr-[373px] ${
             isOpen ? "md:block" : "md:hidden"
           }`}
         >
-          <ul className="md:flex md:flex-col md:items-center 2xl:flex 2xl:text-[16px] 2xl:gap-[27px]">
-            <li>Home</li>
-            <li>Solutions</li>
-            <l1>Portfolio</l1>
-            <l1>Blog</l1>
-            <l1>About us</l1>
-            <l1>Contact us</l1>
-          </ul>
+          <div className="md:flex md:flex-col md:pl-[50px] 2xl:flex 2xl:text-[16px] 2xl:gap-[27px]">
+            <Link to="/home" className="underline underline-offset-8 decoration-4 decoration-[#01303F] ">Home</Link>
+            <Link to="/solutions" className="flex items-center">Solutions <span className="text-2xl"><RiArrowDropDownLine /></span></Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/blog" >Blog</Link>
+            <Link to="/about" >About us</Link>
+            <Link to="/contact" >Contact us</Link>
+          </div>
         </div>
         <div className="md:mt-7 md:w-[100%] 2xl:w-[207px] 2xl:h-[56px] ">
           <Button
@@ -50,61 +53,6 @@ const Navbar = () => {
             width="100%"
           />
         </div>
-      </div>
-      {/* <div className="h-20 items-center md:relative mb-7 mx-10 md:mx-5 md:mt-[52px] md:block flex justify-between flex-wrap">
-        <div className="flex md:block gap-20">
-          <div className="w-40 md:w-[112px]">
-            <img src={TenPlusLogo} alt="tenplus logo" />
-          </div>
-          <div className={`flex gap-10 text-8 ${isOpen? 'md:block mb-10 flex-col bg-slate-400 md:z-40 -[100%] px-8 ' : 'hidden'} `}>
-            <ul>
-              <li>Home</li>
-              <li>Solutions</li>
-              <l1>Portfolio</l1>
-              <l1>Blog</l1>
-              <l1>About us</l1>
-              <l1>Blog us</l1>
-            </ul>
-          </div>
-        </div>
-        <div className="md:mt-[28px]">
-        <Button
-          text="GET QUOTATION"
-          bgColor="#29ABE2"
-          color="white"
-          size="base"
-          width="100%"
-        />
-        </div>
-        
-        <div className={`mobile-nav md:absolute md:top-[42px] hidden lg:block  md:right-5 `}>
-          <Hamburger
-            color="black"
-            size="40"
-            rounded
-            toggled={isOpen}
-            toggle={setIsOpen}
-          />
-        </div>
-      </div>
-      <div className="text-center bg-[#01303F] md:mt-[56px] text-white py-[30px]">
-        <p className="font-medium text-base leading-tight md:text-[10px] md:px-[39px] md:py-[20px]">
-          Visit our portal to see the upcoming FREE training at TenPlus Digital
-          labs →{" "}
-          <a className="text-[#29ABE2]" href="https://portal.tenpluslabs.com">
-            Use Coupon Code: FREE
-          </a>
-        </p>
-      </div> */}
-
-      <div className="text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
-        <p className="font-medium text-base leading-tight md:text-[10px] md:px-[39px] md:py-[20px]">
-          Visit our portal to see the upcoming FREE training at TenPlus Digital
-          labs →{" "}
-          <a className="text-[#29ABE2]" href="https://portal.tenpluslabs.com">
-            Use Coupon Code: FREE
-          </a>
-        </p>
       </div>
     </div>
   );

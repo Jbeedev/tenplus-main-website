@@ -50,9 +50,9 @@ export default class Fade extends Component {
                 alt=""
               />
               <span className="text-2xl md:text-[12px] text-black">
-                Adekunle O.{" "}
+                Ibrahim Dantata.{" "}
                 <span className="text-[#29ABE2] md:text-[10px] text-base">
-                  - Brand O Textiles
+                  - Dantata and sons
                 </span>
               </span>
             </div>
@@ -73,9 +73,9 @@ export default class Fade extends Component {
                 alt=""
               />
               <span className="text-2xl md:text-[12px] text-dark">
-                Adekunle O.{" "}
+                Nwachuku K.{" "}
                 <span className="text-[#29ABE2] md:text-[10px] text-base">
-                  - Brand O Textiles
+                  - Nwanny Autos
                 </span>
               </span>
             </div>
