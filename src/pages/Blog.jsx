@@ -74,7 +74,7 @@ const Blog = () => {
         <div className="mx-[50px] flex gap-[52px] mt-[50px] ">
           <div className="">
             <img
-              className="rounded-[10px] h-[437px] w-[855px]"
+              className="rounded-[10px] object-cover h-[437px] w-[855px]"
               src={blogImg1}
               alt=""
             />
@@ -153,7 +153,7 @@ const Blog = () => {
             </p>
             <p className=" text-xs text-[#29ABE2] mb-[102px] ">LEARN MORE</p>
             <img
-              className="rounded-[10px] h-[437px] w-[855px]"
+              className="rounded-[10px] object-cover h-[437px] w-[855px]"
               src={blogImg2}
               alt=""
             />

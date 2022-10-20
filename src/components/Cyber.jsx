@@ -2,13 +2,13 @@ import React from "react";
 import Button from "../components/Button";
 import Partners from "../components/Partners";
 import ProspectiveClients from "../components/ProspectiveClients";
-import ServicesLink from "../components/ServicesLink";
 import sampleImage1 from "../data/sampleImage1.jpg";
 import sampleImage2 from "../data/sampleImage2.jpg";
 import sampleImage3 from "../data/sampleImage3.jpg";
 import sampleImage4 from "../data/sampleImage4.jpg";
+import ServicesLink from "./ServicesLink";
 
-const Services = () => {
+const Cyber = () => {
   return (
     <div>
       <div className="text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
@@ -20,7 +20,7 @@ const Services = () => {
           </a>
         </p>
         <div className="md:mx-[20px] mx-[244px] mt-[90px]">
-          <p className="text-[#29ABE2] text-[14px]">OUR SOLUTIONS</p>
+          <p className="text-[#29ABE2] text-[14px]">CYBER SOLUTIONS</p>
           <h1 className="md:text-xl text-4xl">
             Custom software development services from professionals you’ll{" "}
             <br />
@@ -28,7 +28,6 @@ const Services = () => {
           </h1>
         </div>
       </div>
-
       <ServicesLink />
 
       <div className="text-center mt-[81px]">
@@ -93,6 +92,7 @@ const Services = () => {
                 SEE SAMPLES
               </h1>
               <p className="text-4xl mb-16 ">Samples</p>
+
               <div className="flex md:flex-col flex-wrap justify-between mb-[50px] ">
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
                   <div
@@ -148,7 +148,6 @@ const Services = () => {
                 </div>
                 <div className="bg-blue-300 basis-[48%]"></div>
               </div>
-              <div className="flex gap-8"></div>
             </div>
           </div>
         </div>
@@ -161,4 +160,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Cyber;

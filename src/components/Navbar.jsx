@@ -5,11 +5,20 @@ import Button from "./Button";
 import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // const [active, setActive] = useState('home');
+
+  // const ActiveNavbar = (val) => {
+  //   setActive(val);
+  // }
+
+  const activeLink = 'underline underline-offset-8 decoration-4 decoration-[#01303F]';
+  const activeLinkSolution = 'underline underline-offset-8 decoration-4 decoration-[#01303F] flex items-center';
 
   return (
     <div className="">
@@ -36,22 +45,23 @@ const Navbar = () => {
           }`}
         >
           <div className="md:flex md:flex-col md:pl-[50px] 2xl:flex 2xl:text-[16px] 2xl:gap-[27px]">
-            <Link to="/home" className="underline underline-offset-8 decoration-4 decoration-[#01303F] ">Home</Link>
-            <Link to="/solutions" className="flex items-center">Solutions <span className="text-2xl"><RiArrowDropDownLine /></span></Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/blog" >Blog</Link>
-            <Link to="/about" >About us</Link>
-            <Link to="/contact" >Contact us</Link>
+            <NavLink to="/home" className={({isActive}) => isActive ? activeLink : '' }>Home</NavLink>
+            <NavLink to="/solutions" className={({isActive}) => isActive ? activeLinkSolution : 'flex items-center' }>Solutions <span className="text-2xl"><RiArrowDropDownLine /></span></NavLink>
+            <NavLink to="/blog" className={({isActive}) => isActive ? activeLink : '' } >Blog</NavLink>
+            <NavLink to="/about" className={({isActive}) => isActive ? activeLink : '' }>About us</NavLink>
+            <NavLink to="/contact" className={({isActive}) => isActive ? activeLink : '' }>Contact us</NavLink>
           </div>
         </div>
         <div className="md:mt-7 md:w-[100%] 2xl:w-[207px] 2xl:h-[56px] ">
-          <Button
-            text="GET QUOTATION"
-            bgColor="#29ABE2"
-            color="white"
-            size="base"
-            width="100%"
-          />
+          <NavLink to="quote">
+            <Button
+              text="GET QUOTATION"
+              bgColor="#29ABE2"
+              color="white"
+              size="base"
+              width="100%"
+            />
+          </NavLink>
         </div>
       </div>
     </div>

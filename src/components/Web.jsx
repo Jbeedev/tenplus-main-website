@@ -2,13 +2,16 @@ import React from "react";
 import Button from "../components/Button";
 import Partners from "../components/Partners";
 import ProspectiveClients from "../components/ProspectiveClients";
-import ServicesLink from "../components/ServicesLink";
 import sampleImage1 from "../data/sampleImage1.jpg";
+import { NavLink } from "react-router-dom";
 import sampleImage2 from "../data/sampleImage2.jpg";
 import sampleImage3 from "../data/sampleImage3.jpg";
 import sampleImage4 from "../data/sampleImage4.jpg";
+import ServicesLink from "./ServicesLink";
 
 const Services = () => {
+ 
+
   return (
     <div>
       <div className="text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
@@ -20,7 +23,7 @@ const Services = () => {
           </a>
         </p>
         <div className="md:mx-[20px] mx-[244px] mt-[90px]">
-          <p className="text-[#29ABE2] text-[14px]">OUR SOLUTIONS</p>
+          <p className="text-[#29ABE2] text-[14px]">WEB SOLUTIONS</p>
           <h1 className="md:text-xl text-4xl">
             Custom software development services from professionals you’ll{" "}
             <br />
@@ -28,7 +31,6 @@ const Services = () => {
           </h1>
         </div>
       </div>
-
       <ServicesLink />
 
       <div className="text-center mt-[81px]">
@@ -93,62 +95,40 @@ const Services = () => {
                 SEE SAMPLES
               </h1>
               <p className="text-4xl mb-16 ">Samples</p>
-              <div className="flex md:flex-col flex-wrap justify-between mb-[50px] ">
-                <div className=" h-[313px] flex basis-[48%] mb-[50px]">
-                  <div
-                    className=" basis-[40%] bg-cover rounded-l-[10px] "
-                    style={{ backgroundImage: `url(${sampleImage1})` }}
-                  ></div>
-                  <div className="md:px-[20px] px-[50px] md:py-5 flex items-center justify-center flex-col basis-[60%] bg-white shadow-sm  rounded-r-[10px]">
-                    <p className=" mb-[50px] text-left ">
+              <div className="flex flex-wrap md:block gap-8 mb-[50px] ">
+                <div className="flex md:mb-6 grow basis-[45%]  rounded-[50px] ">
+                  <img
+                    className=" rounded-l-[50px] md:w-[50%]  w-[292 h-[313px]"
+                    src={sampleImage1}
+                    alt=""
+                  />
+                  <div className="bg-white md:w-[50%] flex flex-col gap-[56px] items-center justify-center pl-[20px] pr-[5px] ">
+                    <p className="text-left ">
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className="bg-white border rounded-[5px] md:text-sm text-base p-3 font-semibold border-black ">
+                      View case study
+                    </button>
                   </div>
                 </div>
-                <div className=" h-[313px] flex basis-[48%] mb-[50px]">
-                  <div
-                    className=" basis-[40%] bg-cover rounded-l-[10px] "
-                    style={{ backgroundImage: `url(${sampleImage2})` }}
-                  ></div>
-                  <div className="md:px-[20px] px-[50px] md:py-5 flex items-center justify-center flex-col basis-[60%] bg-white shadow-sm  rounded-r-[10px]">
-                    <p className=" mb-[50px] text-left ">
+                <div className="flex grow basis-[45%]  rounded-[50px] ">
+                  <img
+                    className=" rounded-l-xl md:w-[50%]  w-[292p h-[313px]"
+                    src={sampleImage1}
+                    alt=""
+                  />
+                  <div className="bg-white rounded-r-xl md:w-[50%] flex flex-col gap-[56px] items-center justify-center pl-[20px] pr-[5px] ">
+                    <p className="text-left ">
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className="bg-white border rounded-[5px] text-base md:text-sm p-3 font-semibold border-black ">
+                      View case study
+                    </button>
                   </div>
                 </div>
-                <div className=" h-[313px] flex basis-[48%] mb-[50px]">
-                  <div
-                    className=" basis-[40%] bg-cover rounded-l-[10px] "
-                    style={{ backgroundImage: `url(${sampleImage3})` }}
-                  ></div>
-                  <div className="md:px-[20px] px-[50px] md:py-5 flex items-center justify-center flex-col basis-[60%] bg-white shadow-sm  rounded-r-[10px]">
-                    <p className=" mb-[50px] text-left ">
-                      A CMS for one of the biggest events hosting in Lagos,
-                      Nigeria.
-                    </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
-                  </div>
-                </div>
-                <div className=" h-[313px] flex basis-[48%]">
-                  <div
-                    className=" basis-[40%] bg-cover rounded-l-[10px] "
-                    style={{ backgroundImage: `url(${sampleImage4})` }}
-                  ></div>
-                  <div className="md:px-[20px] px-[50px] md:py-5 flex items-center justify-center flex-col basis-[60%] bg-white shadow-sm  rounded-r-[10px]">
-                    <p className=" mb-[50px] text-left ">
-                      A CMS for one of the biggest events hosting in Lagos,
-                      Nigeria.
-                    </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
-                  </div>
-                </div>
-                <div className="bg-blue-300 basis-[48%]"></div>
               </div>
-              <div className="flex gap-8"></div>
             </div>
           </div>
         </div>
