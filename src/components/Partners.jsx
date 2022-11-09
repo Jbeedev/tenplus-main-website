@@ -11,7 +11,7 @@ const Partners = () => {
           </h1>
           <div className="flex md:flex-col items-center gap-[136px] ">
             <div className=" grow basis-1/4">
-              <h1 className=" text-[#01303F] text-5xl font-normal mb-[30px] ">
+              <h1 className=" text-[#01303F] font-normal mb-[30px] " style={{fontSize: "clamp(2rem, 1rem + 10vw, 3rem)"}}>
                 We work with the best partners
               </h1>
               <p className="text-base mb-[61px] ">

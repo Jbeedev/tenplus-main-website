@@ -13,18 +13,17 @@ const Contact = () => {
         <div>
           <p className="text-[#29ABE2] text-[14px] mb-[11px]">OUR BLOG</p>
           <h1 className="text-5xl mb-[18px]">Contact us</h1>
-          <p className="text-[16px]">We are here to help you 24/7</p>
+          <p className="text-[16px]">We are here to help and answer any question you might have. We look forward to hearing from you.</p>
         </div>
       </div>
       <div className="bg-white w-screen h-[1255px]">
-        {/* <img className="w-screen h-[776px]" src={Map} alt="map" /> */}
       </div>
 
       <div className="absolute pb-32 top-[450px]">
-        <div className="  mx-[50px] flex ">
-          <div className=" drop-shadow-lg screen bg-white">
-            <div className="flex w-[670px] gap-16 mt-[108px] px-[72px] mb-[123px] ">
-              <div className="w-[50%]">
+        <div className="md:mx-5 md:flex-col  mx-[50px] flex-wrap flex ">
+          <div className="basis-7/12 drop-shadow-lg screen bg-white">
+            <div className="flex md:flex-col basis-6/12 gap-16 mt-[108px] px-[72px] mb-[123px] ">
+              <div className="basis-1/2">
                 <h1 className=" text-2xl ">Call us</h1>
                 <p className="mt-[10px] text-base font-medium ">
                   Contact our support team
@@ -50,7 +49,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[50%] ">
+              <div className="basis-1/2 ">
                 <h1 className=" text-2xl ">Chat us</h1>
                 <p className="mt-[10px] tracking-tighter text-base font-medium ">
                   Contact our support team for a quick response on product
@@ -88,9 +87,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#01303F] w-[610px]">
-            <div className="bg-white rounded-xl mt-[59px] ml-[78px] mr-[37px] mb-[73px] ">
-              <div className="px-[52px]">
+          <div className="bg-[#01303F] basis-5/12">
+            <div className="bg-white rounded-xl mt-[59px] md:ml-2 ml-[78px] md:mr-2 mr-[37px] mb-[73px] ">
+              <div className="md:px-5 px-[52px]">
                 <h1 className="text-[29px] mb-8">Have a project in mind?</h1>
                 <input
                   className="mb-[27px] w-[100%] md:w-[100%] h-[50px] rounded-[5px] pl-7"

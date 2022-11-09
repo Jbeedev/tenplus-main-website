@@ -21,6 +21,13 @@ import AppDev from "./components/AppDev";
 import Cyber from "./components/Cyber";
 import Graphics from "./components/Graphics";
 import Digital from "./components/Digital";
+import Ai from "./components/Ai";
+import Project from "./components/ProjectMgt";
+import Printing from "./components/Printing";
+import Video from "./components/Video";
+import Accessories from "./components/Laptop&Accessories";
+import Training from "./components/Training";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const Layout = ({children}) => {
   return (<React.Fragment>
@@ -49,12 +56,19 @@ function App() {
                 <Route path="cyber" element={<Cyber />}  />
                 <Route path="graphics" element={<Graphics />}  />
                 <Route path="digital" element={<Digital />}  />
+                <Route path="ai" element={<Ai />}  />
+                <Route path="project" element={<Project />}  />
+                <Route path="printing" element={<Printing />}  />
+                <Route path="video" element={<Video />}  />
+                <Route path="accessories" element={<Accessories />}  />
+                <Route path="training" element={<Training />}  />
               </Route>
               <Route path="quote" element={ <RequestQuote /> } />
               <Route path="blog" element={ <Blog /> } />
               <Route path="mobile" element={ <MobileApp /> } />
               <Route path="article" element={ <Article /> } />
               <Route path="terms" element={ <TermsCondition /> } />
+              <Route path="privacy" element={ <PrivacyPolicy /> } />
             </Route>
           </Routes>
         </BrowserRouter>

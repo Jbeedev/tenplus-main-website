@@ -5,6 +5,7 @@ import { FaFacebook, FaTelegram } from 'react-icons/fa'
 import { ImLinkedin } from 'react-icons/im'
 import { IoLogoInstagram, IoLogoTwitter } from 'react-icons/io'
 import { SiTiktok } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 import footerImage from "../data/footerImage.png";
 
 
@@ -21,8 +22,7 @@ const Footer = () => {
                 alt="footer logo"
               />
               <p className="my-[32px] text-white font-light text-base  ">
-                It is a long established fact that a reader will be distracted
-                by the readable content.
+              Get updates and ideas about tech in your inbox.
               </p>
               <div className="mb-[177px] md:hidde border w-[100%] pl-5 border-[gray] flex justify-between">
                 <input
@@ -64,12 +64,12 @@ const Footer = () => {
               style={{ color: "rgba(255, 255, 255, 0.8)" }}
             >
               Portfolio
-              <li>Portal</li>
-              <li>Blog</li>
-              <li>Terms And Conditions</li>
-              <li>Privacy Policy</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
+              <li to="">Portal</li>
+              <li to="">Blog</li>
+              <li to="/terms">Terms And Conditions</li>
+              <li to="">Privacy Policy</li>
+              <li to="">About Us</li>
+              <li to="">Contact Us</li>
             </ul>
           </div>
           <div className="text-white md:mt-12">

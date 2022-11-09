@@ -20,7 +20,7 @@ const Graphics = () => {
           </a>
         </p>
         <div className="md:mx-[20px] mx-[244px] mt-[90px]">
-          <p className="text-[#29ABE2] text-[14px]">CYBER SOLUTIONS</p>
+          <p className="text-[#29ABE2] text-[14px]">GRAPHICS SOLUTIONS</p>
           <h1 className="md:text-xl text-4xl">
             Custom software development services from professionals you’ll{" "}
             <br />
@@ -65,12 +65,17 @@ const Graphics = () => {
           </p>
         </div>
         <p className="text-gray-500 px-[280px] md:px-4 ">
-          The benefit of owning a website today cannot be overemphasized.
-          Website have grown to be one of the trusted tools to drive businesses
-          and brands. Competition is on the high side and one of the ways to
-          stand out is through a strategically optimized website for your target
-          audience. We build highly responsive websites that meet all our
-          clients target audience and their needs
+          Showcase your brand in beautiful creative images and design. Visually
+          appealing content will increase your engagement as people are more
+          likely to remember what they ingested through their visual senses.
+        </p>
+        <p className="text-gray-500 px-[280px] mt-3 ">
+          Let us tell your brand story through creative designs, tell us your
+          ideas and watch us bring them to life.
+        </p>
+        <p className="text-gray-500 px-[280px] mt-3 ">
+          Do you also need them printed? You are in the right place. We offer
+          the best quality to our customers
         </p>
 
         <div className="flex justify-center mt-[30px] mb-[111px]">
@@ -104,7 +109,9 @@ const Graphics = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
@@ -117,7 +124,9 @@ const Graphics = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
@@ -130,7 +139,9 @@ const Graphics = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%]">
@@ -143,7 +154,9 @@ const Graphics = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className="bg-blue-300 basis-[48%]"></div>

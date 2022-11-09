@@ -65,13 +65,20 @@ const Cyber = () => {
           </p>
         </div>
         <p className="text-gray-500 px-[280px] md:px-4 ">
-          The benefit of owning a website today cannot be overemphasized.
-          Website have grown to be one of the trusted tools to drive businesses
-          and brands. Competition is on the high side and one of the ways to
-          stand out is through a strategically optimized website for your target
-          audience. We build highly responsive websites that meet all our
-          clients target audience and their needs
+          Cyber security is an invaluable feature of the digital transformation.
+          We integrate cyber security into the digital space by protecting
+          global networks, digital platforms and securing your most valuable
+          enterprise data across board.
         </p>
+        <div className="mt-2 text-left px-[280px] text-gray-500  md:px-4">
+          <p className="mb-2">Our service focuses on</p>
+          <ol className="list-disc pl-6  m-0 ">
+            <li>Secure Monitoring</li>
+            <li>Compliance and Audit</li>
+            <li>Incidents Response; and</li>
+            <li>Penetration Testing</li>
+          </ol>
+        </div>
 
         <div className="flex justify-center mt-[30px] mb-[111px]">
           <Button
@@ -104,7 +111,9 @@ const Cyber = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
@@ -117,7 +126,9 @@ const Cyber = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
@@ -130,7 +141,9 @@ const Cyber = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%]">
@@ -143,7 +156,9 @@ const Cyber = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className="bg-blue-300 basis-[48%]"></div>

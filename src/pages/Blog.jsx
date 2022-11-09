@@ -1,5 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import blogImg1 from "../data/blog-image1.jpg";
 import blogImg2 from "../data/blog-image2.jpg";
 import blogImg3 from "../data/blog-image3.jpg";
@@ -10,7 +11,7 @@ import blogImg6 from "../data/blog-image6.jpg";
 const Blog = () => {
   return (
     <div>
-      <div className="px-[50px] text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
+      <div className="px-[50px] md:px-0 text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
         <p className="font-medium text-base leading-tight md:text-[10px] md:px-[39px] md:py-[20px]">
           Visit our portal to see the upcoming FREE training at TenPlus Digital
           labs →{" "}
@@ -18,9 +19,11 @@ const Blog = () => {
             Use Coupon Code: FREE
           </a>
         </p>
-        <div className="mx-[244px] mt-[90px] mb-[120px]">
+        <div className="mx-[244px] md:mx-5 mt-[90px] mb-[120px]">
           <p className="text-[#29ABE2] text-[14px] mb-[11px]">OUR BLOG</p>
-          <h1 className="text-5xl ">Welcome To TenPlus Blog</h1>
+          <h1 className="text-5xl " style={{}}>
+            Welcome To TenPlus Blog
+          </h1>
           <p
             className="text-base mt-[11px] "
             style={{ color: "rgba(255, 255, 255, 0.5)" }}
@@ -35,10 +38,10 @@ const Blog = () => {
           <div className="mt-[50px]">
             <hr />
           </div>
-          <div className=" mx-[50px] flex justify-between py-[15px]">
-            <ul className="flex justify-between">
+          <div className=" mx-[40px] flex flex-wrap justify-between py-[15px]">
+            <ul className="flex flex-wrap justify-between">
               <li
-                className="py-[10px] px-[23px] rounded-[50px] "
+                className="py-[10px] px-[23px] rounded-xl "
                 style={{ backgroundColor: "rgba(41, 171, 226, 0.1)" }}
               >
                 All
@@ -55,14 +58,14 @@ const Blog = () => {
               </li>
             </ul>
             <div
-              className="flex items-center w-[45%] rounded-md pl-11 py-3 "
+              className="flex items-center md:w-full w-[45%] rounded-md pl-11 py-3 "
               style={{ backgroundColor: "rgba(0, 0, 0, 0.02)" }}
             >
               <span>
                 <BsSearch />
               </span>
               <input
-                className="border-0 outline-none bg-transparent ml-3 "
+                className="border-0 outline-none bg-transparent ml-4 "
                 type="text"
                 placeholder="Search blog"
               />
@@ -71,15 +74,15 @@ const Blog = () => {
           <hr />
         </div>
 
-        <div className="mx-[50px] flex gap-[52px] mt-[50px] ">
-          <div className="">
+        <div className="mx-[50px] md:mx-[20px]  flex flex-wrap gap-[52px] mt-[50px] ">
+          <div className="basis-[62%] md:flex-grow">
             <img
-              className="rounded-[10px] object-cover h-[437px] w-[855px]"
+              className="rounded-[10px] object-fill w-full md:h-[350px] h-[437px] "
               src={blogImg1}
               alt=""
             />
           </div>
-          <div className="grow-[1] py-[39px] px-[40px] rounded-[10px] shadow-xl border">
+          <div className="basis-1/3 py-[39px] px-[40px] md:flex-grow rounded-[10px] shadow-xl border">
             <h1>Recent Post</h1>
             <hr className="mb-[42px] mt-[21px] " />
             <div className="flex gap-[35px] items-center mb-[50px]">
@@ -129,8 +132,8 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="flex mx-[50px] gap-[52px]">
-          <div className="grow-[2]">
+        <div className="mt-5 flex md:mx-[20px] flex-wrap mx-[50px] gap-[52px]">
+          <div className="basis-[62%] md:flex-grow">
             <p
               className="inline-block mb-6 rounded-[50px] py-[10px] px-[30px] "
               style={{ backgroundColor: "rgba(41, 171, 226, 0.1)" }}
@@ -151,14 +154,16 @@ const Blog = () => {
               detailing how inclusivity is making it easier and safer than ever
               for Aussies to access the crypto economy.
             </p>
-            <p className=" text-xs text-[#29ABE2] mb-[102px] ">LEARN MORE</p>
+            <Link to="/article">
+              <p className=" text-xs text-[#29ABE2] mb-[102px] ">LEARN MORE</p>
+            </Link>
             <img
               className="rounded-[10px] object-cover h-[437px] w-[855px]"
               src={blogImg2}
               alt=""
             />
           </div>
-          <div className="mt-[70px] max-h-[304px] grow-[1] py-[39px] px-[40px] rounded-[10px] shadow-xl border">
+          <div className="basis-1/3 mt-[70px] md:flex-grow max-h-[304px] grow-[1] py-[39px] px-[40px] rounded-[10px] shadow-xl border">
             <h1>Popular Tags</h1>
             <hr className="mb-[42px] mt-[21px] " />
             <div className=" flex flex-wrap gap-[20px] ">
@@ -190,12 +195,14 @@ const Blog = () => {
             detailing how inclusivity is making it easier and safer than ever
             for Aussies to access the crypto economy.
           </p>
-          <p className=" text-xs text-[#29ABE2] mb-[102px] ">LEARN MORE</p>
+          <Link to="/article">
+            <p className=" text-xs text-[#29ABE2] mb-[102px] ">LEARN MORE</p>
+          </Link>
           <div>
             <h1 className="mb-[46px] text-[#01303F] text-2xl font-semibold ">
               Recent
             </h1>
-            <div className="flex gap-[30px]">
+            <div className="flex md:flex-col gap-[30px]">
               <div>
                 <img className=" rounded-xl " src={blogImg3} alt="" />
                 <p className="mt-[26px] text-[14px]">

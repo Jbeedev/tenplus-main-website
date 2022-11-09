@@ -11,6 +11,10 @@ module.exports = {
       'md': {'max': '910px'},
       'sm': {'max': '639px'},
     },
+    plugins: [
+    require('@tailwindcss/line-clamp'),
+    // ...
+  ],
     extend: {},
   },
   plugins: [],

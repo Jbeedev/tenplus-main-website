@@ -18,7 +18,7 @@ const MobileApp = () => {
           </a>
         </p>
         <div className="mx-[244px] mt-[90px]">
-          <p className="text-[#29ABE2] text-[14px]">OUR SOLUTIONS</p>
+          <p className="text-[#29ABE2] text-[14px]">APP SOLUTIONS</p>
           <h1 className="text-5xl">
             Custom software development services from professionals you’ll{" "}
             <br />
@@ -27,11 +27,11 @@ const MobileApp = () => {
         </div>
       </div>
       <div className="text-white text-sm font-medium flex items-center justify-center flex-wrap gap-[30px] py-[46px] px-[114px] bg-[#01303F]">
-        <div className="border px-[15px] py-[13px] ">
-          Web development
-        </div>
+        <div className="border px-[15px] py-[13px] ">Web development</div>
         <div className="border px-[15px] py-[13px]  ">Cyber Security</div>
-        <div className="border px-[15px] py-[13px] bg-[#29ABE2] ">Web app development</div>
+        <div className="border px-[15px] py-[13px] bg-[#29ABE2] ">
+          Web app development
+        </div>
         <div className="border px-[15px] py-[13px] ">Graphics design</div>
         <div className="border px-[15px] py-[13px] ">Digital Marketing</div>
         <div className="border px-[15px] py-[13px] ">
@@ -81,13 +81,12 @@ const MobileApp = () => {
           </p>
         </div>
         <p className="text-gray-500 px-[280px] ">
-          The benefit of owning a website today cannot be overemphasized.
-          Website have grown to be one of the trusted tools to drive businesses
-          and brands. Competition is on the high side and one of the ways to
-          stand out is through a strategically optimized website for your target
-          audience. We build highly responsive websites that meet all our
-          clients target audience and their needs
+          Mobile apps are more handy and easier to download and use than having
+          to constantly remember a web address. Customers will get to constantly
+          see your company name on their phone which can even be a motivation to
+          do business with you.
         </p>
+        <p className="mt-2">We can help you with everything you need to have a mobile app in the shortest possible time.</p>
 
         <div className="flex justify-center mt-[30px] mb-[111px]">
           <Button

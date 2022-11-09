@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const TermsCondition = () => {
+const PrivacyPolicy = () => {
   return (
     <div>
       <div className=" px-[50px] text-center bg-[#01303F] md:mt-7 text-white py-4 ">
@@ -26,6 +26,7 @@ const TermsCondition = () => {
       </div>
       <div className="  ">
         <div className="flex bg-red-300">
+          
           <div className="sticky h-full pt-20">
             <div className="ml-3 h-screen w-72 md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
               <p className=" mb-[30px] bg-[#29ABE2] py-[15px] pl-[20px] w-[100%] ">
@@ -396,4 +397,4 @@ const TermsCondition = () => {
   );
 };
 
-export default TermsCondition;
+export default PrivacyPolicy;

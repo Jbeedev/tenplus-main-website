@@ -20,7 +20,7 @@ const AppDev = () => {
           </a>
         </p>
         <div className="md:mx-[20px] mx-[244px] mt-[90px]">
-          <p className="text-[#29ABE2] text-[14px]">CYBER SOLUTIONS</p>
+          <p className="text-[#29ABE2] text-[14px]">APP SOLUTIONS</p>
           <h1 className="md:text-xl text-4xl">
             Custom software development services from professionals you’ll{" "}
             <br />
@@ -64,14 +64,13 @@ const AppDev = () => {
             Javascript
           </p>
         </div>
-        <p className="text-gray-500 px-[280px] md:px-4 ">
-          The benefit of owning a website today cannot be overemphasized.
-          Website have grown to be one of the trusted tools to drive businesses
-          and brands. Competition is on the high side and one of the ways to
-          stand out is through a strategically optimized website for your target
-          audience. We build highly responsive websites that meet all our
-          clients target audience and their needs
+        <p className="text-gray-500 px-[280px] ">
+          Mobile apps are more handy and easier to download and use than having
+          to constantly remember a web address. Customers will get to constantly
+          see your company name on their phone which can even be a motivation to
+          do business with you.
         </p>
+        <p className="text-gray-500 px-[280px] mt-3">We can help you with everything you need to have a mobile app in the shortest possible time.</p>
 
         <div className="flex justify-center mt-[30px] mb-[111px]">
           <Button

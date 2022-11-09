@@ -15,13 +15,7 @@ const ServicesLink = () => {
         >
           Web development
         </NavLink>
-        <NavLink to="/solutions/cyber"
-          className={({ isActive }) =>
-            isActive ? activeService : normalService
-          }
-        >
-          Cyber Security
-        </NavLink>
+        
         <NavLink to="/solutions/app"
           className={({ isActive }) =>
             isActive ? activeService : normalService
@@ -44,7 +38,7 @@ const ServicesLink = () => {
           Digital Marketing
         </NavLink>
 
-        <NavLink
+        <NavLink to="/solutions/ai"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }
@@ -52,42 +46,42 @@ const ServicesLink = () => {
           Artificial Intelligence
         </NavLink>
 
-        <NavLink
+        <NavLink to="/solutions/project"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }
         >
           Project Management
         </NavLink>
-        <NavLink
+        <NavLink to="/solutions/printing"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }
         >
           Printing
         </NavLink>
-        <NavLink
+        <NavLink to="/solutions/video"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }
         >
           Video Editing
         </NavLink>
-        <NavLink
+        <NavLink to="/solutions/cyber"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }
         >
           Cyber Security
         </NavLink>
-        <NavLink
+        <NavLink to="/solutions/accessories"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }
         >
           Laptop and accessories
         </NavLink>
-        <NavLink
+        <NavLink to="/solutions/training"
           className={({ isActive }) =>
             isActive ? activeService : normalService
           }

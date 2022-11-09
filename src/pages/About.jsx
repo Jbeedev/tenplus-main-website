@@ -43,10 +43,10 @@ const About = () => {
           <div className="">
             <h1 className=" mb-[30px] text-4xl text-[#01303F] ">Our Mission</h1>
             <p className="mb-10 text-base font-medium text-gray-400 ">
-              To solve challenging performance problems for business and
-              organization using reliable digital strategies. To Promote African
-              Development by encouraging Business Sector and Entrepreneurship in
-              Africa.
+              To solve challenging performance problems for businesses and
+              organizations using reliable digital strategies. To Promote
+              African Development by encouraging Business Sector and
+              Entrepreneurship in Africa.
             </p>
             <div>
               <Button
@@ -64,10 +64,8 @@ const About = () => {
           <div className="">
             <h1 className=" mb-[30px] text-4xl text-[#01303F] ">Our Vission</h1>
             <p className="mb-10 text-base font-medium text-gray-400 ">
-              To solve challenging performance problems for business and
-              organization using reliable digital strategies. To Promote African
-              Development by encouraging Business Sector and Entrepreneurship in
-              Africa.
+              To be the most sought after and best Innovation Tech Company In
+              Nigeria.
             </p>
             <div>
               <Button
@@ -100,9 +98,12 @@ const About = () => {
               Our Customer
             </h1>
             <p className="mb-10 text-base font-medium text-gray-400 ">
-              We do what we do in order to deliver compelling and efficient
-              digital solutions, remarkable experiences, and outstanding results
-              for our clients to promote their personal or business growth.
+              Our client’s business is as important to us as it is to them. We
+              ensure that our clients get the best digital solutions that are
+              instrumental to their business growth. At Tenplus Digital Labs, we
+              do not just do business, we are invested in making sure our
+              clients enjoy their experience and reach their business goals with
+              the array of solutions we provide.
             </p>
             <div>
               <Button
@@ -139,18 +140,16 @@ const About = () => {
               </span>
             </h1>
             <p className=" text-gray-400 ">
-              Businesses must work together to bridge poverty and
-              underdevelopment, and this is more important now, more than ever.
-              Something greater tend to be achieved through collective efforts.
-              There are countless benefits in exploring digital skills or
-              solutions to our lives and businesses. Taking advantage of these
-              can drive an economy to greater success. And taking these
-              opportunities in a large number can cause rapid increase in the
-              development of the society. A few number of successful companies
-              cannot do it all alone. We are more about trying our best to
-              increase the number of successful businesses, and also find ways
-              to increase the gross income of individuals, to be able to have
-              greater positive impact to our society.
+              Back in the days, codes had to be written by hand and most
+              solutions were manual but with the advent of computers, it became
+              easier. The more we journey into the digital age, new ways are
+              opened. It is this that drives us as an organization to provide
+              solutions in the area of IT, digital marketing, Technology and the
+              rest. We believe that businesses have more to gain if they tap
+              into the vastness of IT and this will in turn have an effect on
+              the economy of the country as a whole. We have also taken the step
+              to train more individuals in digital skills which benefit their
+              lives, businesses and the society as a whole.
             </p>
             <div className="mt-10">
               <Button

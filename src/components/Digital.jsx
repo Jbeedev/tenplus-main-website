@@ -20,7 +20,7 @@ const Digital = () => {
           </a>
         </p>
         <div className="md:mx-[20px] mx-[244px] mt-[90px]">
-          <p className="text-[#29ABE2] text-[14px]">CYBER SOLUTIONS</p>
+          <p className="text-[#29ABE2] text-[14px]">DIGITAL SOLUTIONS</p>
           <h1 className="md:text-xl text-4xl">
             Custom software development services from professionals you’ll{" "}
             <br />
@@ -64,13 +64,15 @@ const Digital = () => {
             Javascript
           </p>
         </div>
-        <p className="text-gray-500 px-[280px] md:px-4 ">
-          The benefit of owning a website today cannot be overemphasized.
-          Website have grown to be one of the trusted tools to drive businesses
-          and brands. Competition is on the high side and one of the ways to
-          stand out is through a strategically optimized website for your target
-          audience. We build highly responsive websites that meet all our
-          clients target audience and their needs
+        <p className="text-gray-500 text-center px-[280px] md:px-4 ">
+          Marketing has gone beyond the traditional way. Anyone with a phone or
+          internet is a potential customer. How do you get potential customers
+          to see your business and brand? Digital marketing is the solution and
+          we are your sure plug to give your business the visibility it needs.
+          Digital marketing puts your brand in the face of potential customers.
+          We ensure that your target audience sees your business with our well
+          planned digital marketing campaigns. <br /> Tell us your marketing
+          needs and we will deliver the result you desire.
         </p>
 
         <div className="flex justify-center mt-[30px] mb-[111px]">
@@ -104,7 +106,9 @@ const Digital = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
@@ -117,7 +121,9 @@ const Digital = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%] mb-[50px]">
@@ -130,7 +136,9 @@ const Digital = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className=" h-[313px] flex basis-[48%]">
@@ -143,7 +151,9 @@ const Digital = () => {
                       A CMS for one of the biggest events hosting in Lagos,
                       Nigeria.
                     </p>
-                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">View case study</button>
+                    <button className=" border border-black md:text-sm rounded-[9px] py-2 px-3 ">
+                      View case study
+                    </button>
                   </div>
                 </div>
                 <div className="bg-blue-300 basis-[48%]"></div>
