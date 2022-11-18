@@ -13,75 +13,86 @@ const Contact = () => {
         <div>
           <p className="text-[#29ABE2] text-[14px] mb-[11px]">OUR BLOG</p>
           <h1 className="text-5xl mb-[18px]">Contact us</h1>
-          <p className="text-[16px]">We are here to help and answer any question you might have. We look forward to hearing from you.</p>
+          <p className="text-[16px]">
+            We are here to help and answer any question you might have. We look
+            forward to hearing from you.
+          </p>
         </div>
       </div>
-      <div className="bg-white w-screen h-[1255px]">
-      </div>
-
-      <div className="absolute pb-32 top-[450px]">
+      <div className=" w-screen -mt-28">
         <div className="md:mx-5 md:flex-col  mx-[50px] flex-wrap flex ">
           <div className="basis-7/12 drop-shadow-lg screen bg-white">
-            <div className="flex md:flex-col basis-6/12 gap-16 mt-[108px] px-[72px] mb-[123px] ">
-              <div className="basis-1/2">
-                <h1 className=" text-2xl ">Call us</h1>
-                <p className="mt-[10px] text-base font-medium ">
-                  Contact our support team
-                </p>
-                <p className=" text-[32px] ">
-                  +234813
-                  <br />
-                  9251969
-                </p>
-                <div className="mt-[82px]">
-                  <h1 className=" text-2xl ">Address</h1>
-                  <div className=" mt-[30px] ">
-                    <h1 className="text-[#29ABE2] text-xs ">ILORIN OFFICE</h1>
-                    <p className="mt-[8px] text-base font-medium ">
-                      No. 29, University Road, Tanke, Ilorin, Kwara State.
-                    </p>
-                  </div>
-                  <div className=" mt-[40px] ">
-                    <h1 className="text-[#29ABE2] text-xs ">ABUJA OFFICE</h1>
-                    <p className=" text-base font-medium ">
-                      No. 29, University Road, Tanke, Ilorin, Kwara State.
-                    </p>
+            <div className=" md:flex-col basis-6/12 gap-16 mt-[108px] md:px-2 px-[72px] mb-[123px] ">
+              <div className="w-full flex justify-between flex-wrap">
+                <div className="flex-1">
+                  <h1 className=" text-2xl ">Call us</h1>
+                  <p className="mt-[10px] text-base font-medium ">
+                    Contact our support team
+                  </p>
+                  <p className=" text-[32px] ">
+                    +234813
+                    <br />
+                    9251969
+                  </p>
+                </div>
+                <div className="flex-1">
+                  <h1 className=" text-2xl ">Chat us</h1>
+                  <p className="mt-[10px] tracking-tighter text-base font-medium ">
+                    Contact our support team for a quick response on product
+                    features, pricing, and more.
+                  </p>
+                  <div className=" mt-[38px]">
+                    <Button
+                      text="Let's talk"
+                      bgColor="#FFFFFF"
+                      color="black"
+                      size="base"
+                      border="2px solid black"
+                      width="207px"
+                    />
                   </div>
                 </div>
+                {/*  */}
               </div>
-              <div className="basis-1/2 ">
-                <h1 className=" text-2xl ">Chat us</h1>
-                <p className="mt-[10px] tracking-tighter text-base font-medium ">
-                  Contact our support team for a quick response on product
-                  features, pricing, and more.
-                </p>
-                <div className=" mt-[38px]">
-                  <Button
-                    text="Let's talk"
-                    bgColor="#FFFFFF"
-                    color="black"
-                    size="base"
-                    border="2px solid black"
-                    width="207px"
-                  />
+
+              <div className="flex w-full justify-between mt-20 flex-wrap ">
+                <div className="flex-1">
+                  <div className="max-w-[268px]">
+                    <h1 className=" text-2xl ">Address</h1>
+                    <div className=" mt-[30px] ">
+                      <h1 className="text-[#29ABE2] text-xs ">ILORIN OFFICE</h1>
+                      <p className="mt-[8px] text-base font-medium ">
+                        No. 29, University Road, Tanke, Ilorin, Kwara State.
+                      </p>
+                    </div>
+                    <div className=" mt-[40px] ">
+                      <h1 className="text-[#29ABE2] text-xs ">ABUJA OFFICE</h1>
+                      <p className=" text-base font-medium ">
+                        No. 29, University Road, Tanke, Ilorin, Kwara State.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-[43px] ">
-                  <h1 className=" text-2xl ">Working days</h1>
-                  <div className="mt-[30px] mb-5">
-                    <p className="text-[#29ABE2] text-xs mb-2 ">
-                      MONDAY - FRIDAY
-                    </p>
-                    <p className=" text-base font-medium ">9am - 5pm</p>
-                  </div>
-                  <div className="mb-5">
-                    <p className="text-[#29ABE2] text-xs mb-2 ">SATURDAY</p>
-                    <p className=" text-base font-medium ">10am - 5pm</p>
-                  </div>
-                  <div>
-                    <p className="text-[#29ABE2] text-xs mb-2 ">
-                      SUNDAY & PUBLIC HOLIDAYS
-                    </p>
-                    <p className=" text-base font-medium ">Closed</p>
+
+                <div className="flex-1">
+                  <div className=" max-w-[268px] ">
+                    <h1 className=" text-2xl ">Working days</h1>
+                    <div className="mt-[30px] mb-5">
+                      <p className="text-[#29ABE2] text-xs mb-2 ">
+                        MONDAY - FRIDAY
+                      </p>
+                      <p className=" text-base font-medium ">9am - 5pm</p>
+                    </div>
+                    <div className="mb-5">
+                      <p className="text-[#29ABE2] text-xs mb-2 ">SATURDAY</p>
+                      <p className=" text-base font-medium ">10am - 5pm</p>
+                    </div>
+                    <div>
+                      <p className="text-[#29ABE2] text-xs mb-2 ">
+                        SUNDAY & PUBLIC HOLIDAYS
+                      </p>
+                      <p className=" text-base font-medium ">Closed</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,7 +196,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <img className="w-screen h-[700px] object-cover " src={Map} alt="map" />
+      </div>
+
+      <div className="">
+        <img className="w-full h-[700px] object-cover " src={Map} alt="map" />
       </div>
     </div>
   );

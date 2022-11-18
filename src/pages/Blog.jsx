@@ -75,7 +75,7 @@ const Blog = () => {
         </div>
 
         <div className="mx-[50px] md:mx-[20px]  flex flex-wrap gap-[52px] mt-[50px] ">
-          <div className="basis-[62%] md:flex-grow">
+          <div className="basis-[60%] md:flex-grow">
             <img
               className="rounded-[10px] object-fill w-full md:h-[350px] h-[437px] "
               src={blogImg1}
