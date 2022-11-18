@@ -30,14 +30,16 @@ const RequestQuote = () => {
 
   return (
     <div className="">
-      <div className="relative">
-        <div className=" bg-[#01303F] text-center text-white h-[748px] ">
-          <h4 className="text-[16px] font-medium mb-[95px] pt-[30px] ">
-            Visit our portal to see the upcoming FREE training at TenPlus
-            Digital labs →{" "}
-            <span className="text-[#29ABE2]">Use Coupon Code: FREE</span>
-          </h4>
-          <div>
+      <div className="relativ">
+        <div className=" bg-[#01303F] text-center text-white h-[748px] py-[30px]">
+        <p className="font-medium text-base leading-tight md:text-[10px] md:px-[39px] md:py-[20px]">
+          Visit our portal to see the upcoming FREE training at TenPlus Digital
+          labs →{" "}
+          <a className="text-[#29ABE2]" href="https://portal.tenpluslabs.com">
+            Use Coupon Code: FREE
+          </a>
+        </p>
+          <div className="mt-[90px]">
             <h1 className="text-5xl mb-[18px]">Request a quote</h1>
             <p className="text-[16px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -46,7 +48,7 @@ const RequestQuote = () => {
           </div>
           
         </div>
-        <div  className="absolute top-[466px] md:top-[570px] rounded-lg md:mx-5 mx-[277px] drop-shadow-lg screen bg-white">
+        <div  className=" -mt-60 top-[466p] md:top-[570px] rounded-lg md:mx-5 mx-[277px] drop-shadow-lg bg-white">
           <div className=" w-[100%] ">
             <div className="my-[37px] mx-[160px] md:mx-0 flex md:flex-col gap-4 justify-center items-center">
               <div className="flex items-center gap-3">
@@ -87,23 +89,17 @@ const RequestQuote = () => {
             <hr />
 
             <div>{forms[currentform]}</div>
-            
-
             <div className=" mx-[78px] flex flex-wrap gap-[50px] justify-between"></div>
             <div className=" mx-[78px]">
-              <div className="w-[100%] mb-[72px]">
-                {currentform <= 1 ? <CurrentBtn onClick= {handleNext}  /> : <PreviousBtn onClick={handlePreviuos} />}
+              <div className="w-[100%] mb-[72px] pb-5">
+                {currentform < 1 ? <CurrentBtn onClick= {handleNext}  /> : <PreviousBtn onClick={handlePreviuos} />}
 
               </div>
             </div>
           </div>
         </div>
-
-      
       </div>
-      {/* <div className="bg-white min-h-[532px]"></div> */}
-
-      <div className="bg-white min-h-[700px]"></div>
+      {/* <div className="bg-white min-h-[70]"></div> */}
     </div>
   );
 };

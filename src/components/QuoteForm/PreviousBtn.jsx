@@ -2,8 +2,8 @@ import React from "react";
 
 const PreviousBtn = (props) => {
   return (
-    <div>
-      <button {...props} className="text-white flex rounded p-[10px] text-center items-center gap-3 justify-center w-[100%] bg-[#29AbE2]">
+    <div className="flex w-ful justify-between">
+      <button {...props} className="text-white flex rounded p-[10px]  items-center gap-3 justify-center bg-[#29AbE2]">
         Previous{" "}
         <svg
           width="20"
@@ -28,6 +28,7 @@ const PreviousBtn = (props) => {
           />
         </svg>
       </button>
+      <button className="text-white flex rounded p-[10px] text-center items-center bg-[#29AbE2]">Save</button>
     </div>
   );
 };

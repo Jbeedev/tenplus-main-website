@@ -5,7 +5,6 @@ import { FaFacebook, FaTelegram } from 'react-icons/fa'
 import { ImLinkedin } from 'react-icons/im'
 import { IoLogoInstagram, IoLogoTwitter } from 'react-icons/io'
 import { SiTiktok } from 'react-icons/si'
-import { Link } from 'react-router-dom'
 import footerImage from "../data/footerImage.png";
 
 
@@ -24,9 +23,9 @@ const Footer = () => {
               <p className="my-[32px] text-white font-light text-base  ">
               Get updates and ideas about tech in your inbox.
               </p>
-              <div className="mb-[177px] md:hidde border w-[100%] pl-5 border-[gray] flex justify-between">
+              <div className="mb-[177px] w-[100%] pl-5 border-[gray] flex justify-between">
                 <input
-                  className="bg-[#01303F] h-[55px] w-[100%]  border-solid border-0 border-[gray] p-0"
+                  className="bg-[#01303F] h-[55px] w-[100%]  pl-2 border-solid border border-[gray] p-0"
                   placeholder="Subscribe"
                   type="text"
                 />

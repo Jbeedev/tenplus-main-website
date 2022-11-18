@@ -1,19 +1,23 @@
-import React from "react";
-
+import React, { useState } from "react";
+// import { Twirl as Hamburger } from "hamburger-react";
+import { MdOutlineCancel } from "react-icons/md";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const TermsCondition = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <div className=" px-[50px] text-center bg-[#01303F] md:mt-7 text-white py-4 ">
+      <div className=" px-[50px] md:px-5 text-center bg-[#01303F] md:mt-7 text-white py-[30px] ">
         <div className=" mb-20 mt-10">
           <p className="font-medium text-base leading-tight md:text-[10px] md:px-[39px] md:py-[20px]">
-            Visit our portal to see the upcoming FREE training at TenPlus Digital
-            labs →{" "}
+            Visit our portal to see the upcoming FREE training at TenPlus
+            Digital labs →{" "}
             <a className="text-[#29ABE2]" href="https://portal.tenpluslabs.com">
               Use Coupon Code: FREE
             </a>
           </p>
-          <div className="mx-[244px] mt-10">
+          <div className="md:mx-5 mx-[244px] mt-10">
             <h1 className="text-5xl ">Terms & Condition</h1>
             <p
               className="text-base mt-[11px] "
@@ -25,20 +29,39 @@ const TermsCondition = () => {
         </div>
       </div>
       <div className="  ">
-        <div className="flex bg-red-300">
-          <div className="sticky h-full pt-20">
-            <div className="ml-3 h-screen w-72 md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
-              <p className=" mb-[30px] bg-[#29ABE2] py-[15px] pl-[20px] w-[100%] ">
-                TERMS OF SERVICE
-              </p>
-              <p className=" mb-[30px] py-[15px] pl-[20px] ">REGISTRATION</p>
-              <p className=" mb-[30px] py-[15px] pl-[20px] ">THE CONTRACT</p>
-              <p className=" mb-[30px] py-[15px] pl-[20px] ">GDPR</p>
-              <p className=" mb-[30px] py-[15px] pl-[20px] ">CONTACT US</p>
-              
+        {/*  */}
+        <button
+          onClick={() => setIsOpen((previsOpen) => !previsOpen)}
+          className={`${isOpen && "hidden"} p-2 rounded-full my-3 `}
+          style={{ backgroundColor: "rgba(41, 171, 226, 0.3)" }}
+        >
+          <AiOutlineMenu />
+        </button>
+
+        <div
+          className="flex "
+          style={{ backgroundColor: "rgba(41, 171, 226, 0.1)" }}
+        >
+          {isOpen && (
+            <div className=" z-50 md:hidde fixed h-full pt-20">
+              <button
+                className="absolute top-2 right-2 text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                <MdOutlineCancel />
+              </button>
+              <div className="ml-3 h-screen w-72 md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
+                <p className=" mb-[30px] bg-[#29ABE2] py-[15px] pl-[20px] w-[100%] ">
+                  TERMS OF SERVICE
+                </p>
+                <p className=" mb-[30px] py-[15px] pl-[20px] ">REGISTRATION</p>
+                <p className=" mb-[30px] py-[15px] pl-[20px] ">THE CONTRACT</p>
+                <p className=" mb-[30px] py-[15px] pl-[20px] ">GDPR</p>
+                <p className=" mb-[30px] py-[15px] pl-[20px] ">CONTACT US</p>
+              </div>
             </div>
-          </div>
-          <div className="pl-28 bg-white pt-20">
+          )}
+          <div className="pl-28 md:w-full md:px-4 bg-white pt-20 md:pt-0">
             <h1>TERMS OF SERVICE</h1>
             <h4>Effective Date: July 1, 2021</h4>
             <p>

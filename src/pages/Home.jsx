@@ -1,7 +1,5 @@
 import React from "react";
 import Button from "../components/Button";
-// import Navbar from "../components/Navbar";
-import ClientSlider from "../components/ClientSlider";
 import designImage from "../data/designImage.png";
 import laptopFlowers from "../data/laptopFlowers.jpg";
 import blogImage1 from "../data/blogImage1.jpg";
@@ -15,12 +13,8 @@ import { FaCode } from "react-icons/fa";
 import { MdOutlineLocationSearching } from "react-icons/md";
 import { BiLowVision } from "react-icons/bi";
 
-import { SiAsana } from "react-icons/si";
-import { SiTiktok } from "react-icons/si";
-import { SiGmail } from "react-icons/si";
-import { SiSlack } from "react-icons/si";
+
 import ProspectiveClients from "../components/ProspectiveClients";
-import Partners from "../components/Partners";
 
 const Home = () => {
   return (
@@ -35,11 +29,10 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="mx-10 md:mx-5 flex flex-grow justify-between flex-wrap">
-        <div className="mt-[78px] basis-7/12 flex-grow">
+      <div className="px-10 w-full md:px-5 flex gap-[93px] flex-wrap">
+        <div className="mt-[78px] mb-4 basis-5/12 flex-1">
           <h1 className="text-[48px] text-[#01303F] md:text-[36px] md:leading-tight  font-normal">
             <p className="py-0 ">Cutting edge solutions within reach</p>
-            {/* <p className="py-0">solutions within reach</p> */}
           </h1>
           <p
             className="text-[18px] md:text-[14px] font-normal my-5"
@@ -59,8 +52,8 @@ const Home = () => {
             icon={<BsArrowRightCircle />}
           />
         </div>
-        <div className="basis-5/12 flex-grow">
-          <img src={designImage} alt="" />
+        <div className=" flex-1 basis-5/12">
+          <img className="" src={designImage} alt="" />
         </div>
       </div>
       {/* ///////////// */}
@@ -148,7 +141,7 @@ const Home = () => {
               <p className="mb-5 flex items-center">
                 <span className="mr-5">
                   <FaRegCheckSquare />
-                </span>
+                </span>base
                 Delivery on schedule
               </p>
               <p className="mb-5 flex items-center">

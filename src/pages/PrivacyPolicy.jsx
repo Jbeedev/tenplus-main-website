@@ -14,18 +14,19 @@ const PrivacyPolicy = () => {
             </a>
           </p>
           <div className="mx-[244px] mt-10">
-            <h1 className="text-5xl ">Terms & Condition</h1>
+            <h1 className="text-5xl ">Privacy Policy</h1>
             <p
               className="text-base mt-[11px] "
               style={{ color: "rgba(255, 255, 255, 0.5)" }}
             >
-              Terms that ensure you use our amazing services the right way
+              How we make use of your information and
+protect your privacy.
             </p>
           </div>
         </div>
       </div>
       <div className="  ">
-        <div className="flex bg-red-300">
+        <div className=" flex " style={{backgroundColor: "rgba(41, 171, 226, 0.1)"}}>
           
           <div className="sticky h-full pt-20">
             <div className="ml-3 h-screen w-72 md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">

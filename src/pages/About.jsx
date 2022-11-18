@@ -13,7 +13,7 @@ import aboutImg8 from "../data/about-image8.jpg";
 const About = () => {
   return (
     <div>
-      <div className="px-[50px] text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
+      <div className="px-[50px] md:px-5 text-center bg-[#01303F] md:mt-7 text-white py-[30px]">
         <p className="font-medium text-base leading-tight md:text-[10px] md:px-[39px] md:py-[20px]">
           Visit our portal to see the upcoming FREE training at TenPlus Digital
           labs →{" "}
@@ -21,7 +21,7 @@ const About = () => {
             Use Coupon Code: FREE
           </a>
         </p>
-        <div className="mx-[244px] mt-[90px] mb-[120px]">
+        <div className="mx-[244px] md:mx-5 mt-[90px] mb-[120px]">
           <p className="text-[#29ABE2] text-[14px] mb-[11px]">
             KNOW MORE ABOUT US
           </p>
@@ -32,15 +32,15 @@ const About = () => {
         className=" pt-[73px] pb-[83px] "
         style={{ backgroundColor: "rgba(41, 171, 226, 0.1)" }}
       >
-        <div className="mx-[50px] flex gap-[124px] justify-center items-center">
-          <div className="relative">
+        <div className="mx-[50px] md:mx-5 flex gap-[124px] md:flex-wrap justify-center items-center">
+          <div className="order-2 relative">
             <img className="object-cover rounded-xl " src={aboutImg1} alt="" />
             <div
               className=" absolute h-36 w-36 right-[-20px] rounded-tr-lg -z-10 top-[-20px] "
               style={{ backgroundColor: "#29ABE2" }}
             ></div>
           </div>
-          <div className="">
+          <div className="order-1">
             <h1 className=" mb-[30px] text-4xl text-[#01303F] ">Our Mission</h1>
             <p className="mb-10 text-base font-medium text-gray-400 ">
               To solve challenging performance problems for businesses and
@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mx-[50px] mt-[93px] flex gap-[124px] justify-center items-center">
+        <div className="mx-[50px] md:mx-4 mt-[93px] flex md:flex-wrap gap-[124px] justify-center items-center">
           <div className="">
             <h1 className=" mb-[30px] text-4xl text-[#01303F] ">Our Vission</h1>
             <p className="mb-10 text-base font-medium text-gray-400 ">
@@ -85,15 +85,15 @@ const About = () => {
             ></div>
           </div>
         </div>
-        <div className="mx-[50px] mt-[93px] flex gap-[124px] justify-center items-center">
-          <div className="relative">
+        <div className="mx-[50px] md:mx-5 mt-[93px] flex gap-[124px] md:flex-wrap justify-center items-center">
+          <div className="order-2 relative">
             <img className="object-cover rounded-xl " src={aboutImg3} alt="" />
             <div
               className=" absolute h-36 w-36 right-[-20px] rounded-tr-lg -z-10 top-[-20px] "
               style={{ backgroundColor: "#29ABE2" }}
             ></div>
           </div>
-          <div className="">
+          <div className="order-1">
             <h1 className=" mb-[30px] text-4xl text-[#01303F] ">
               Our Customer
             </h1>
@@ -118,7 +118,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className=" px-[50px] bg-white pt-[111px] pb-[178px] ">
+      <div className=" px-[50px] md:px-5 bg-white pt-[111px] pb-[178px] ">
         <div className=" text-center mb-[50px] ">
           <h1 className=" mb-[11px] text-xs font-medium text-[#29ABE2] ">
             MEET OUR TEAM
@@ -126,9 +126,9 @@ const About = () => {
           <h3 className=" text-4xl ">Our team</h3>
         </div>
 
-        <div className="flex gap-[124px] justify-center items-center">
+        <div className="flex md:flex-col gap-[124px] items-center">
           <img
-            className=" object-cover rounded-lg w-[556px] h-[567px] "
+            className=" object-cover rounded-lg max-w-[556px] max-h-[567px] "
             src={aboutImg4}
             alt=""
           />
@@ -164,7 +164,7 @@ const About = () => {
         </div>
         <div className=" mt-[107px] ">
           <div>
-            <div className="flex gap-[30px]">
+            <div className="flex gap-[30px] flex-wrap">
               <div className="grow flex flex-col justify-center items-center">
                 <img
                   className=" rounded-xl object-cover w-[264px] h-[305px] "

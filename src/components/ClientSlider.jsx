@@ -26,14 +26,14 @@ export default class Fade extends Component {
                 src={clientImage}
                 alt=""
               />
-              <span className="text-2xl md:text-[12px] text-black">
+              <span className="text-2xl md:text-[12px] text-white">
                 Adekunle O.{" "}
                 <span className="text-[#29ABE2] md:text-[10px] text-base">
                   - Brand O Textiles
                 </span>
               </span>
             </div>
-            <p className="text-black font-medium text-base ">
+            <p className="text-white font-medium text-base ">
               Local man ipsum dolor sit amet, consectetur adipiscing elit.
               Justo, dictum massa faucibus et viverra ac egestas sed vitae.
               Congue tempus nisl, fermentum mauris, arcu adipiscing aliquam.
