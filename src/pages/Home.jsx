@@ -191,7 +191,7 @@ const Home = () => {
           </div>
 
           <div className="basis-8/12 md:basis-[100%] md:pl-5 pl-[50px]">
-            <div className="flex  flex-wrap ">
+            <div className="flex  flex-wrap justify-between">
               <div className="basis-5/12 md:basis-[100%] border-b-2 pb-6">
                 <h4 className="flex items-center md:text-base text-xl text-black">
                   <span className="flex items-center justify-center text-white text-2xl mr-6 w-11 h-11 rounded-full bg-[#01303F]">
@@ -214,7 +214,7 @@ const Home = () => {
                 </a>
               </div>
 
-              <div className="basis-5/12 md:basis-[100%] border-b-2 pb-6">
+              <div className="basis-5/12 md:basis-[100%] border-b-2 py-6">
                 <h4 className="flex items-center md:text-base text-xl text-black">
                   <span className="flex items-center justify-center text-white text-2xl mr-6 w-11 h-11 rounded-full bg-[#01303F]">
                     <FaCode />
